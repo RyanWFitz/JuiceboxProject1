@@ -1,7 +1,7 @@
 // start up sql: sudo service postgresql start
 require('dotenv').config();
 
-const PORT = 3000;
+const { PORT = 3000 } = process.env
 const express = require('express');
 const server = express();
 
